@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BuildItBigger.iml" filepath="$PROJECT_DIR$/BuildItBigger.iml" group="BuildItBigger" />
+      <module fileurl="file://$PROJECT_DIR$/androidjokelibrary/BuildItBigger-androidjokelibrary.iml" filepath="$PROJECT_DIR$/androidjokelibrary/BuildItBigger-androidjokelibrary.iml" group="BuildItBigger/androidjokelibrary" />
+      <module fileurl="file://$PROJECT_DIR$/mylibrary/BuildItBigger-mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/BuildItBigger-mylibrary.iml" group="BuildItBigger/mylibrary" />
+      <module fileurl="file://$PROJECT_DIR$/androidjokelibrary/androidjokelibrary.iml" filepath="$PROJECT_DIR$/androidjokelibrary/androidjokelibrary.iml" group="BuildItBigger/androidjokelibrary" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="BuildItBigger/app" />
+      <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" group="BuildItBigger/backend" />
+      <module fileurl="file://$PROJECT_DIR$/displayjokelibrary/displayjokelibrary.iml" filepath="$PROJECT_DIR$/displayjokelibrary/displayjokelibrary.iml" group="BuildItBigger/displayjokelibrary" />
+      <module fileurl="file://$PROJECT_DIR$/lib-jokes/lib-jokes.iml" filepath="$PROJECT_DIR$/lib-jokes/lib-jokes.iml" group="BuildItBigger/lib-jokes" />
+      <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" group="BuildItBigger/mylibrary" />
+    </modules>
+  </component>
+</project>
