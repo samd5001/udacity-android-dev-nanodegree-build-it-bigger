@@ -20,3 +20,53 @@ allprojects {
         google()
     }
 }
+
+// Having issues with mismatched versions
+subprojects {
+    project.configurations.all {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'com.android.support'
+                    && !details.requested.name.contains('multidex') ) {
+                details.useVersion "28.0.0"
+            }
+        }
+    }
+}
+
+task startBackend {
+    dependsOn ':backend:appengineStart'
+    doFirst {
+        println "Starting Backend"
+    }
+    doLast {
+        println "Backend Started!"
+    }
+}
+
+task runAndroidTests {
+    dependsOn ':app:connectedAndroidTest'
+    doFirst {
+        println "Running androidTests"
+    }
+    doLast {
+        println "androidTests Finished!"
+    }
+}
+
+task stopBackend {
+    dependsOn ':backend:appengineStop'
+    doFirst {
+        println "Stopping Backend"
+    }
+    doLast {
+        println "Backend Stopped!"
+    }
+}
+
+task integrationTests {
+    dependsOn 'startBackend'
+    dependsOn 'runAndroidTests'
+    dependsOn 'stopBackend'
+    startBackend.finalizedBy runAndroidTests
+    runAndroidTests.finalizedBy stopBackend
+}

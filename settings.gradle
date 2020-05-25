@@ -1,1 +1,1 @@
-include ':app', ':backend', ':lib-jokes', ':displayjokelibrary'
+include ':app', ':backend', ':lib-jokes', $/:displayjokelibrary/$
