@@ -22,13 +22,13 @@ public class MainActivity extends BaseMainActivity implements MainActivityInterf
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        MobileAds.initialize(this, "");
+        MobileAds.initialize(this,  getResources().getString(R.string.ad_app_id));
         setupInterstitialAd();
     }
 
     private void setupInterstitialAd() {
         interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        interstitialAd.setAdUnitId(getResources().getString(R.string.interstitial_ad_unit_id));
         getNewAd();
 
         findViewById(R.id.joke_button).setOnClickListener(new View.OnClickListener() {
